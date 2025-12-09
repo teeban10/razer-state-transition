@@ -7,7 +7,7 @@ const processComand = (line: string) => {
     const output = handleCommand(line);
     // if (output) console.log(output);
   } catch (error: any) {
-    console.error('Error processing comman11d:', error.message);
+    console.error('Error processing command:', error.message);
   }
 }
 

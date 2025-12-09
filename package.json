@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js",
-    "start:file": "node dist/index.js commands.txt",
+    "start": "node dist/src/index.js",
+    "start:file": "node dist/src/index.js commands.txt",
     "test": "jest --runInBand --silent",
     "test:watch": "jest --watchAll"
   },

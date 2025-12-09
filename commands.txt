@@ -1,3 +1,19 @@
 CREATE P1001 10.00 MYR M01 # test payment
 # CREATE P1002 11.00 MYR M01
 AUTHORIZE P1001 # retry
+CREATE P1001 10.00 MYR M01 # test payment Normal
+CREATE P1002 10.00 MYR M02 # test payment Normal
+CREATE P1003 10.00 MYR M03 # test payment Normal
+CREATE P1004 10.00 MYR M04
+CREATE P1005 10.00 INR M01 # test payment Unsupported Currency
+CREATE P1006 10.00 USD M0111111 # test payment 
+CREATE P1007 10.00 MYR M01 # test payment
+CREATE P1008 10.00 MYR M01 # test payment
+CREATE 10.00 JPY M01 # test payment Unsupported currency and no Payment ID
+CREATE P1010 10.00 MYR M01 # test payment
+CREATE P1011 150.00 USD M01 # test payment More than 100 will trigger review
+CREATE P1012 100.00 USD M01 # test payment
+CREATE P1013 1000.00 USD M01 # test payment
+CREATE P1014 1.00 USD M01 # test payment Payment is zero
+CREATE P1015 0.00 MYR M01 # test payment
+CREATE P1016 10.2222222 MYR M01 # test payment amount fixed is more than 2

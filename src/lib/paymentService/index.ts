@@ -10,8 +10,11 @@ export const createPayment = (args: string[], command: string, comment?: string)
 
   validateRequired(args[1], "Amount");
   const amount = validateAmount(args[1] as string);
-  const amountRounded = roundToTwo(amount);
-  const amountCents = amountRounded * 100;
+  const amountRounded = parseFloat(amount.toFixed(2));
+  const amountCents = Math.round(amountRounded * 100);
+  if (paymentId === 'P1016') {
+    console.log(amountRounded, amountCents, 'HOLA');
+  }
   validateRequired(args[2], "Currency");
   validateCurrency(args[2] as string);
   const currency = args[2] as string;
