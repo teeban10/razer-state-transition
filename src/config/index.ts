@@ -1,0 +1,1 @@
+export const allowedCurrencies: string[] = ['MYR', 'USD', 'GBP', 'SGD', 'AUD', 'EUR'] as const;
